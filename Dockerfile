@@ -1,9 +1,9 @@
-FROM        ubuntu:12.04
+FROM        ubuntu:16.04
 
 RUN 		apt-get update -y
 
 # Add file & deps
-ADD         spiped-1.3.1 /spiped
+ADD         spiped-1.5.0 /spiped
 RUN 		apt-get install -y build-essential --fix-missing
 RUN 		apt-get install -y libssl-dev
 
