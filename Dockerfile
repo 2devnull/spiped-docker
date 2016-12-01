@@ -11,7 +11,7 @@ RUN 		apt-get install -y libssl-dev
 RUN 		cd /spiped && make install
 
 # Add key
-ADD 		spiped.key /spiped/spiped.key
+# ADD 		spiped.key /spiped/spiped.key
 
 # SSH nonsense
 RUN 		apt-get install -y openssh-server
